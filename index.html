@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    <h2>
-        This is from main
-    </h2>
-    <p>This is from master</p>
-</body>
+<html>
+    <head>
+        <title>Todo App</title>
+        <style>
+            /* h1, h2, h3, h4{
+                color: red;
+            } */
+
+            /* .heading{
+                color:red
+            } */
+
+            body > div{
+                color:red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1 class="heading">This is an heading</h1>
+            <h2 class="heading">This is an heading</h2>
+            <h3 class="heading">This is an heading</h3>
+            <h4 class="heading">This is an heading</h4>
+            <h5 class="heading">This is an heading</h5>
+            <h6 class="heading">This is an heading</h6>
+        </div>
+        <p>this is a paragraph this is a paragraph this is a paragraph this is a paragraph <wbr> this is a paragraph this is a paragraph this is a paragraph this is a paragraph<wbr> this is a paragraph this is a paragraph </p>
+        <p><b>Some text</b></p>
+
+        <details>
+            <summary>Example</summary>
+            <p>This is inside the details</p>
+        </details>
+
+        <label for="file">Downloading progress</label>
+        <progress id="file" value="70" max="100"> 70% </progress>
+
+        <table border>
+            <thead>
+                <tr>
+                    <th>
+                        Names
+                    </th>
+                    <th>
+                        Phone Number
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sandra</td>
+                    <td>077858789</td>
+                </tr>
+                <tr>
+                    <td>Stephen</td>
+                    <td>078756589</td>
+                </tr>
+                <tr>
+                    <td>Joshua</td>
+                    <td>07647868970</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="" method style="border:solid 1px grey; background-color: aquamarine;">
+            <div>Register</div>
+            <label for="">Username:</label>
+            <input type="text" name="" id=""><br><br>
+            <label for="">Firstname:</label>
+            <input type="text" name="" id=""><br><br>
+            <label for="">Lastname:</label>
+            <input type="text" name="" id=""><br><br>
+            <label for="">Email:</label>
+            <input type="email" name="" id=""><br><br>
+            <label for="">Phone No:</label>
+            <input type="number" name="" id=""><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </body>
 </html>
