@@ -3,23 +3,19 @@
     <head>
         <title>Todo App</title>
         <style>
-            /* h1, h2, h3, h4{
-                color: red;
-            } */
+            @import url('./style.css');
 
-            /* .heading{
-                color:red
-            } */
-
-            body > div{
-                color:red;
+            h1{
+                color:blue;
             }
         </style>
+        <!-- <link rel="stylesheet" href="./style.css"> -->
     </head>
 
     <body>
+        
         <div>
-            <h1 class="heading">This is an heading</h1>
+            <h1 class="heading" style="color: yellow;">This is an heading</h1>
             <h2 class="heading">This is an heading</h2>
             <h3 class="heading">This is an heading</h3>
             <h4 class="heading">This is an heading</h4>
@@ -37,7 +33,8 @@
         <label for="file">Downloading progress</label>
         <progress id="file" value="70" max="100"> 70% </progress>
 
-        <table border>
+        <!-- The table section -->
+        <table border id="names-table">
             <thead>
                 <tr>
                     <th>
@@ -62,11 +59,22 @@
                     <td>07647868970</td>
                 </tr>
                 <tr>
+                    <td>Joshua</td>
+                    <td>07647868970</td>
+                </tr>
+                <tr>
+                    <td>Joshua</td>
+                    <td>07647868970</td>
+                </tr>
+                <tr>
+                    <td>Joshua</td>
+                    <td>07647868970</td>
+                </tr>
+                <tr>
                     <td rowspan="2">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -74,8 +82,10 @@
                 </tr>
             </tbody>
         </table>
-
-        <form action="" method style="border:solid 1px grey; background-color: aquamarine;">
+        <!-- End of table section -->
+<a href="login.html">Login</a>
+        <!-- The registration form -->
+        <form action="" method class="reg-form">
             <div>Register</div>
             <label for="">Username:</label>
             <input type="text" name="" id=""><br><br>
@@ -87,7 +97,7 @@
             <input type="email" name="" id=""><br><br>
             <label for="">Phone No:</label>
             <input type="number" name="" id=""><br><br>
-            <input type="submit" value="Register">
+            <input type="submit" value="Register" class="reg-btn"/>
         </form>
     </body>
 </html>
