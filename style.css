@@ -56,14 +56,43 @@ a{
     color:white;
 }
 
-/* ul{
-    list-style-type:circle;
-} */
-
 ol > .names{
     list-style: decimal;
 }
 
 ul{
     list-style-type: square;
+}
+
+/* GRID STYLING */
+.item1{
+    grid-area: heading;
+}
+.item2{
+    grid-area: dash;
+}
+.item3{
+    grid-area: mid;
+}
+.item4{
+    grid-area: right-grid;
+}
+.item5{
+    grid-area: footer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'heading heading heading heading heading heading'
+    'dash dash mid mid right-grid right-grid'
+    'dash dash footer footer right-grid right-grid';
+    background-color: #891515;
+    gap:20px;
+    padding:10px;
+}
+
+.grid-container > div{
+    background-color: white;
+    padding: 20px;
 }
