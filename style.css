@@ -96,3 +96,11 @@ ul{
     background-color: white;
     padding: 20px;
 }
+
+input{
+    padding:10px
+}
+
+.names-form{
+    padding: 50px 30px;
+}
